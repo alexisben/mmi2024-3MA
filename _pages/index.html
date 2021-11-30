@@ -1,9 +1,11 @@
 ---
-title: Bienvenue sur la page d'accueil
 layout: default
+title: Bienvenue sur la page d'accueil
 ---
 
-<!-- Ce bout de code est fait pour vous servir d'exemple, n'oubliez pas de le supprimer quand vous n'en aurez plus besoin ! -->
+<!--{% include titre.html title="Films à l'affiche"%}! -->
+
+<!-- Ce bout de code est fait pour vous servir d'exemple, n'oubliez pas de le supprimer quand vous n'en aurez plus besoin 
 <section class="news">
 
     {% include news-box.html title="Un premier article" text="Ici la description du premier article" %}
@@ -13,21 +15,23 @@ layout: default
     {% include news-box.html title="Un troisième article" text="Ici la description du troisième article, et tout ça, avec le même html !" %}
 
 </section>
+! -->
 
-<!-- Exemple de grille avec bootstrap -->
-<section class="container">
-    <div class="row">
-        <div class="col-3">
-            test
+<!-- Hero -->
+<section class="container container_hero">
+    <div class="row row1">
+        <div class="col-6 col-md-5 offset-md-1">
+            <h1>Le Festival cinéma <br />d'animation</h1>
         </div>
-        <div class="col-3">
-            test
+        <div class="col-6 col-md-5 offset-md-1">
+            <p>Le seul cinéma français exclusivement<br />
+            consacré au cinéma d'animation</p>
         </div>
-        <div class="col-6">
-            test
-        </div>
-        <div class="mathys-coucou">
-            Coucou c'est moi, c'est Mathys !
+    </div>
+    <div class="row justify-content-end row2">
+        <div class="col-2 col-md-2">
+            <p>Pass sanitaire obligatoire !<br />
+            Nous scannons à l'entrer.</p>
         </div>
     </div>
 </section>
