@@ -3,33 +3,53 @@ footer{
     height: 50vh;
     font-family: 'Montserrat', Arial, sans-serif;
     color: $blanc;
+}
 
-    section{
-        height: 25px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+.footer-bar{
+    background: $orange;
+    position: relative;
+    height: 25px;
+    width: 100vw;
 
-        .a.col-lg-4{
-            background: $rouge;
-        }
+    ::before{
+        position: absolute;
+        background: $rouge;
+        width: 33%;
+        top: 0;
+        left: 0;
+        content: ' ';
+    }
 
-        .b.col-lg-4{
-            background: $orange;
-        }
-
-        .c.col-lg-4{
-            background: $jaune;
-        }
+    ::after{
+        position: absolute;
+        background: $jaune;
+        width: 33%;
+        top: 0;
+        right: 0;
+        content: ' ';
     }
 }
 
 .logo-footer{
+    margin-top: 30px;
     height: 100%;
     width: 100%;
 }
 
-.icon{
-    padding-right: 10px;
-    margin-right: 10px;
+.icons{
+    display: flex;
+
+    svg{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-text{
+    padding-top: 150px;
+}
+
+.footer-logo{
+    padding-bottom: 60px;
 }
