@@ -3,9 +3,65 @@ body {
     font-family: serif;
 }
 
-.container_hero{
+.container_img{
     border: 3px solid darkorange;
+    background-image: url("../../assets/img/hero.png");
+    height: 587px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: $text;
+    position: relative;
+
 }
+
+.container_hero{
+    height: 100%;
+
+}
+
+.container_hero h1 b{
+    color: $blanc;
+    font-size: 64px;
+}
+
+.container_hero h1{
+    color: $blanc;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+
+.h1_hero{
+    padding: 50px 0;
+}
+
+.container_img h2{
+    color: $orange; 
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.scan_pass {
+    background-color: #2A3175;
+    display: inline;
+    color: $blanc;
+    padding: 2px 5px;
+    position: absolute;
+    right: 14px;
+    bottom: 110px;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+
+.pass{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+
 .container{
     border: 2px solid black;
 }
@@ -33,3 +89,4 @@ figcaption{
     margin: 10px 0;
     font-family: $text;
 }
+
