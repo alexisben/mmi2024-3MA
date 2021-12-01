@@ -3,6 +3,10 @@ body {
     font-family: serif;
 }
 
+.row_hero{
+    margin-top: 50px;
+}
+
 .container_img{
     border: 3px solid darkorange;
     background-image: url("../../assets/img/hero.png");
@@ -38,7 +42,7 @@ body {
 .container_img h2{
     color: $orange; 
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .scan_pass {
@@ -67,9 +71,7 @@ body {
 }
 
 .row{
-
     border: 2px solid red;
-
 }
 
 .rowafiche{
@@ -78,6 +80,7 @@ body {
 
 .my_col{
     border: 2px solid yellow;
+    height: 100%;
 }
 
 .FA{
@@ -90,3 +93,60 @@ figcaption{
     font-family: $text;
 }
 
+.evenements{
+    height: 317px;
+    display: flex;
+    justify-content: center;
+    font-family: $titre;
+ }
+
+.festival{
+    background-image: url("../../assets/img/img_festival.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s ease-in;
+    background-position: center;
+}
+
+.activite{
+    background-image: url("../../assets/img/img_enfants.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s ease-in;
+    background-position: center;
+}
+
+.activite:hover{
+    background-size: 140%;
+}
+
+.festival:hover{
+    background-size: 140%;
+    
+}
+
+.evenements p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.evenements b{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.h2_evnmt{
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: $titre;
+    font-weight: 700;
+    font-size: 36px;
+}
