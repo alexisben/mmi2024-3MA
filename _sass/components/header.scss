@@ -5,27 +5,32 @@
 header{
     position: sticky;
     top: 0;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;;
     background: $blanc;
-    align-items: center;
-    background-image: url("../src/img/banner.png");
+    background-image: url("../../assets/img/banner.png");
     background-repeat: no-repeat;
     background-position: top right;
-    font-family: var(--fontHelvetica);
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 400;
     height: 150px;
     z-index: 7;
 }
 
-nav{
-    display: inline;
-    order: 1;
-    margin-left: 80px;
+.header{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 150px;
+    align-items: center;
 }
 
-nav a{
-    padding: 3px;
+nav{
+    display: flex;
+    order: 1;
+    align-items: center;
+
+    a{
+        margin: 0;
+        margin-right: 50px;
+    }
 }
 
 .logo{
@@ -63,14 +68,14 @@ a{
     display: flex;
     margin: auto;
     order: 3;
-}
 
-.recherche img{
-    margin-right: 10px;
-}
+    img{
+        margin-right: 10px;
+    }
 
-.recherche input{
-    margin-right: 250px;
+    input{
+        margin-right: 250px;
+    }
 }
 
 .head-page{
@@ -80,4 +85,9 @@ a{
     margin: 0;
     font-family: var(--fontMonserrat);
     color: var(--blanc);
+}
+
+.banner{
+    height: 40%;
+    width: 20%;
 }
