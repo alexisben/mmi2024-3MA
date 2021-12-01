@@ -6,3 +6,25 @@ body {
 .container_hero{
     border: 3px solid darkorange;
 }
+.container{
+    border: 2px solid black;
+}
+
+.row{
+    border: 2px solid red;
+
+}
+
+.my_col{
+    border: 2px solid yellow;
+}
+
+.img_hero{
+    height: 1000px;
+}
+
+.img_hero .row{ 
+    height: 50%;
+}
+    
+    
