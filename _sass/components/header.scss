@@ -9,6 +9,7 @@ header{
     background-image: url("../../assets/img/banner.png");
     background-repeat: no-repeat;
     background-position: top right;
+    color: $noir;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 400;
     height: 150px;
@@ -26,10 +27,12 @@ nav{
     display: flex;
     order: 1;
     align-items: center;
+    font-weight: 500;
 
     a{
         margin: 0;
         margin-right: 50px;
+        border-bottom: $noir;
     }
 }
 
