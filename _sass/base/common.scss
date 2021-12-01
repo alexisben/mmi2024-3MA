@@ -11,20 +11,25 @@ body {
 }
 
 .row{
+
     border: 2px solid red;
 
+}
+
+.rowafiche{
+    margin: 100px 0;
 }
 
 .my_col{
     border: 2px solid yellow;
 }
 
-.img_hero{
-    height: 1000px;
+.FA{
+    width: 100%;
 }
 
-.img_hero .row{ 
-    height: 50%;
+figcaption{
+    text-align: center; 
+    margin: 10px 0;
+    font-family: ;
 }
-    
-    
