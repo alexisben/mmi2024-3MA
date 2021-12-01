@@ -143,10 +143,66 @@ figcaption{
     font-weight: 700;
 }
 
-.h2_evnmt{
-    margin-bottom: 80px;
+.h2_evnmt, .h2_cinema{
+    margin: 80px 0;
     text-align: center;
     font-family: $titre;
     font-weight: 700;
     font-size: 36px;
+    color: $blanc;
+}
+
+.evnmt{
+    background-color: $noir;
+    font-family: $titre;
+    
+}
+
+.img_cinema{
+    width: 100%;
+}
+
+.cinema{
+    color: $blanc;
+    font-family: $text;
+}
+
+.cinema button{
+    border: none;
+    background-color: $rouge;
+    padding: 17px 50px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 60px;
+    display: inline;
+    position: absolute;
+    bottom: 10px;
+}
+
+.cinema p, .cinema h6{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+.cinema p{
+    margin-bottom: 50px;
+}
+
+.cinema h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.my_col_cinema{
+    border: 2px solid yellow;
+    height: 424px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.my_col_cinema div{
+    margin: 50px 0;
 }
