@@ -1,0 +1,83 @@
+*{
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;;
+    background: $blanc;
+    align-items: center;
+    background-image: url("../src/img/banner.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-family: var(--fontHelvetica);
+    font-weight: 400;
+    height: 150px;
+    z-index: 7;
+}
+
+nav{
+    display: inline;
+    order: 1;
+    margin-left: 80px;
+}
+
+nav a{
+    padding: 3px;
+}
+
+.logo{
+    display: table;
+    order: 2;
+    margin: auto;
+}
+
+input{
+    font-size: 15px;
+    text-align: start;
+    font-family: var(--fontMonserrat);
+    font-weight: lighter;
+    background-color: $blanc;
+    border: none;
+    border-bottom: solid 3px $noir;
+    color: $noir;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+*:focus-visible{
+    outline: solid 1px $orange;
+}
+
+a{
+    color: var(--noir);
+    margin: 20px;
+    font-family: var(--fontRaleway);
+    text-decoration: none;
+}
+
+.recherche{
+    display: flex;
+    margin: auto;
+    order: 3;
+}
+
+.recherche img{
+    margin-right: 10px;
+}
+
+.recherche input{
+    margin-right: 250px;
+}
+
+.head-page{
+    height: 710px;
+    background-image: url("../src/img/background-accueil1.png");
+    display: flex;
+    margin: 0;
+    font-family: var(--fontMonserrat);
+    color: var(--blanc);
+}
