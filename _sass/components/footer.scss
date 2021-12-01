@@ -1,0 +1,21 @@
+footer{
+    background: $noir;
+    height: 50vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: $blanc;
+
+    section{
+        height: 30px;
+        background: $jaune;
+
+        a{
+            order: 1;
+            background: $rouge;
+        }
+    }
+}
+
+.logo-footer{
+    height: 100%;
+    width: 100%;
+}
