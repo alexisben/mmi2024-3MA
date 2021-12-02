@@ -19,19 +19,25 @@ button{
         font-weight: 800;
     }
 
-    img{
+    .fleche{
+        content: url('../../assets/img/flefleche.svg');
         align-self: center;
+        width: 40px;
         height: 100%;
         padding-left: 20px;
         display: table;
-        align-self: center;
-        width: 40px;
     }
 }
 
 button:hover{
     transition: 0.5ms;
     background: $blanc;
+    fill: $rouge;
     color: $rouge;
     border: solid 5px $rouge;
+    transition: 5ms;
+
+    .fleche{
+        content: url('../../assets/img/fleflechebis.svg');
+    }
 }
