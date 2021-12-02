@@ -27,7 +27,7 @@ ul{
     font-size: 20px;
 }
 
-li:hover{
+.filtre:hover{
     font-weight: 600;
 }
 
@@ -59,10 +59,9 @@ li{
 }
 
 .container_img h2{
-    color: $orange;
-    font-size: 22px;
+    color: $orange; 
+    font-size: 26px;
     font-weight: 400;
-    line-height: 25px;
 }
 
 .scan_pass {
@@ -183,6 +182,7 @@ figcaption{
 
 .img_cinema{
     width: 100%;
+    
 }
 
 .cinema{
@@ -215,7 +215,7 @@ figcaption{
 
 .my_col_cinema{
     border: 2px solid yellow;
-    height: 424px;
+    height: 494px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -230,6 +230,8 @@ figcaption{
     text-align: center;
     color: $orange;
     padding-bottom: 80px;
+    display: flex; 
+    flex-direction: column;
 }
 
 .liste_horaires b{
@@ -240,4 +242,49 @@ figcaption{
 .liste_horaires li{
     padding: 20px 0;
     
+}
+
+.mapadresse {
+    display: flex;
+    justify-content: flex-start;
+    margin: 90px;
+    position:relative;
+}
+
+.Adresse {
+    color: $blanc;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-left: 100px ;
+    justify-content: center;
+    font-family: $text;
+}
+
+.ounoustrouver {
+    margin: 10px 0px 20px 0px;
+    font-weight: 700;
+    font-size: 27px;
+
+
+}
+
+.cinemalefestivaladress, .adresseducine {
+    margin-bottom: 20px;
+}
+
+
+.lecadre {
+    position:absolute;
+    z-index: 0;
+    width: 1250px;
+	height: 325px;
+    top: 85px;
+    left: 50px;
+}
+
+iframe {
+    position: relative;
+    z-index: 2; 
 }
