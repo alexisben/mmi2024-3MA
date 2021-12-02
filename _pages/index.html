@@ -26,9 +26,10 @@ title: Bienvenue sur la page d'accueil
         </div>
     </section>
 
+<!-- Section Film à l'affiche -->
+
     <section>
         {% include titre.html content="Films à l'affiche" %}
-        <!-- <h2 class=h2_films>Films à l'affiche</h2> -->
         <ul>
            <li class="filtre">Aujourd'hui</li>
            <li class="filtre">Cette semaine</li>
@@ -36,7 +37,6 @@ title: Bienvenue sur la page d'accueil
         </ul>
     </section>
 
-<!-- erreur de class -->
 <section class="container img_hero">
 
     <div class="row justify-content-evenly rowafiche">
@@ -88,10 +88,15 @@ title: Bienvenue sur la page d'accueil
     </div>
     {%include button.html content="Tout les films à l'affiche" %}
 </section>  
+
+<!-- Transition Événements ou quoi -->
+
 {% include transition-bar.html %}
 <section class="container-fluid evnmt">
     <section class="container">
-        {% include titre.html content="Événements" %}
+        <div class="titre-align">
+            {% include titre.html content="Événements" %}
+        </div>
         <div class="row evenements">
             <div class="col-lg-6 festival my_col">
                 <div class="col-lg-6 offset-lg-3">
@@ -107,8 +112,11 @@ title: Bienvenue sur la page d'accueil
             </div>
         </div>
     </section>
+
+<!-- Section Le Cinema -->
+
     <section class="container cinema">
-        <h2 class="h2_cinema">Le Cinéma</h2>
+        {% include titre.html content="Le Cinéma" %}
         <div class="row cinema">
             <div class="col-lg-6 my_col_cinema">
                 <div>
@@ -131,6 +139,8 @@ title: Bienvenue sur la page d'accueil
         
     </section>
 
+<!-- Section Où nous trouver -->
+
     <section class="container mapadresse" style="border: 2px red solid;">
         <div class="row justify-content-center mapadresserow">
             <div class="col-md-6 mapadressecol_1" style="border: 2px rgb(0, 255, 13) solid;" >
@@ -147,16 +157,9 @@ title: Bienvenue sur la page d'accueil
                 </div>
             </div>
         </div>
-        <img class="lecadre" src="../assets/img/rect_jaune.png"alt= "un vilain petit cadre orangé"/>
-    
-        <div class="Adresse">   
-            <h3 class="ounoustrouver">Où nous trouver ?</h3> 
-            <p class= "cinemalefestivaladress "> Cinéma "Le Festival"</p> 
-            <p class= "adresseducine"> 151 boulevard ALBERT 1er (barrière de Bègles)</p>
-            <p> 33130 Bègles </p>
-        </div>
-        
     </section>
+
+<!-- Section Horraire -->
 
     <section>
         <h2 class="h2_horaires">Horaires</h2>
@@ -164,12 +167,6 @@ title: Bienvenue sur la page d'accueil
             <li>Lundi-Vendredi<br /><b>10h-22h</b></li>
             <li>Samedi<br /><b>12h-00h</b></li>
             <li>Dimanche<br /><b>10h-20h</b></li>
- 
         </ul>
-
-    </section>
-
-
-    
-    
+    </section> 
 </section>

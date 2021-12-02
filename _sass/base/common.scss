@@ -325,7 +325,15 @@ figcaption{
     width: 100%;
 }
 
+.titre-align{
+    width: 100%;
+}
+
+// ---
+
 // page film
+
+// --
 
 .top-page{
     display: flex;
@@ -458,13 +466,6 @@ figcaption{
     p{
         margin-bottom: 25px;
         text-align: center;
-    }
-    button{
-        justify-self: flex-start;
-        align-self: center;
-        background-color: rgba(128, 128, 128, 0.466);
-        transform: translateY(500px);
-        padding: 10px 30px;
     }
 }
 

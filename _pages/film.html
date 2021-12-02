@@ -3,6 +3,8 @@ layout: default
 title: Bienvenue sur la page du film
 ---
 
+<!-- Haut de page -->
+
 <section class="top-page">
     <div class="film_hero" style="background-image : url('../assets/img/photo_hero.jpg');"></div>
     <section class="film_info">
@@ -25,8 +27,6 @@ title: Bienvenue sur la page du film
                 <p><b>Durée : </b>128 min</p>
                 <p><b>Réalisateur : </b>Murano</p>
                 <p><b>Casting : </b>Dupire Mathieu</p>
-
-
             </div>
         </article>
     </section>
@@ -36,6 +36,8 @@ title: Bienvenue sur la page du film
     {% include titre.html content="Bande d'annonce" %}
 </div>
 
+
+    <!-- Programmation du film -->
 
 <section class="horaires">
     <h2>Horaires :</h2>
@@ -47,7 +49,6 @@ title: Bienvenue sur la page du film
         <li><b>20:30</b><br />VO</li>
     </ul>
     <p>Réserver votre ticket selon la séance de votre choix</p>
-    <button>Réserver</button>
 </section>
 <section class="video">
 
@@ -65,4 +66,14 @@ title: Bienvenue sur la page du film
 
     
 </section>
+
+<section class="photo_slider">
+
+</section>
+
+<section class="voir_seances">
+    {%include button.html content="Voir plus de séances"%}
+</section>
+
+
 
