@@ -35,20 +35,18 @@ li{
 
 .container_hero{
     height: 100%;
+    h1{
+        color: $blanc;
+        font-size: 48px;
+        font-weight: 700;
+        b{
+            color: $blanc;
+            font-size: 64px;
+        }
+    }
 
 }
 
-.container_hero h1 b{
-    color: $blanc;
-    font-size: 64px;
-}
-
-.container_hero h1{
-    color: $blanc;
-    font-size: 48px;
-    font-weight: 700;
-
-}
 
 .h1_hero{
     padding: 50px 0;
@@ -98,6 +96,18 @@ figcaption{
     display: flex;
     justify-content: center;
     font-family: $titre;
+    a{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        &:hover{
+            color: gray;
+        }
+    }
+    b{
+        font-size: 22px;
+        font-weight: 700;
+    }
  }
 
 .festival{
@@ -110,6 +120,9 @@ figcaption{
     flex-direction: column;
     transition: .3s ease-in;
     background-position: center;
+    &:hover{
+        background-size: 140%;
+    }
 }
 
 .activite{
@@ -122,26 +135,32 @@ figcaption{
     flex-direction: column;
     transition: .3s ease-in;
     background-position: center;
+    &:hover{
+        background-size: 140%;
+    }
 }
 
-.activite:hover{
-    background-size: 140%;
-}
 
-.festival:hover{
-    background-size: 140%;
+
+// .festival:hover{
+//     background-size: 140%;
     
-}
+// }
 
-.evenements p{
-    font-size: 16px;
-    font-weight: 400;
-}
+// .evenements a{
+//     font-size: 16px;
+//     font-weight: 400;
+//     margin: 0;
+// }
 
-.evenements b{
-    font-size: 22px;
-    font-weight: 700;
-}
+// .evenements a:hover{
+//     color: gray;
+// }
+
+// .evenements b{
+//     font-size: 22px;
+//     font-weight: 700;
+// }
 
 .h2_cinema {
     padding: 100px 0;
@@ -157,7 +176,7 @@ figcaption{
     font-family: $titre;
     
     .titre{
-        color: $blanc;
+        color: $noir;
     }
 }
 
@@ -169,30 +188,33 @@ figcaption{
 .cinema{
     color: $blanc;
     font-family: $text;
+    button{
+        border: none;
+        background-color: $rouge;
+        padding: 17px 50px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 60px;
+        display: inline;
+        position: absolute;
+        bottom: 10px;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
+    }
+    h6{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
+    }
 }
 
-.cinema button{
-    border: none;
-    background-color: $rouge;
-    padding: 17px 50px;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 60px;
-    display: inline;
-    position: absolute;
-    bottom: 10px;
-}
-
-.cinema p, .cinema h6{
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 300;
-}
-
-.cinema h3{
-    font-size: 24px;
-    font-weight: 700;
-}
 
 .my_col_cinema{
     height: 494px;
@@ -200,11 +222,12 @@ figcaption{
     justify-content: center;
     flex-direction: column;
     position: relative;
+    margin-bottom: 50px;
+    div{
+        margin: 50px 0; 
+    }
 }
 
-.my_col_cinema div{
-    margin: 50px 0;
-}
 
 .liste_horaires{
     text-align: center;
@@ -212,63 +235,69 @@ figcaption{
     padding-bottom: 150px;
     display: flex; 
     flex-direction: column;
+    b{
+        color: $blanc;
+        font-weight: 700;
+    }
+    li{
+        padding: 15px 0;
+        margin: 0px;
+    }
 }
 
-.liste_horaires b{
-    color: $blanc;
-    font-weight: 700;
-}
 
-.liste_horaires li{
-    padding: 15px 0;
-    margin: 0px;
+.mapadresse {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    z-index: 2; 
+    .mapadressecol_1 {
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+    }
+    .mapadressecol_2{
+        display: flex;
+        .Adresse{
+            color: $blanc;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            margin-left: 100px ;
+            justify-content: center;
+            font-family: $text;
+            align-self: center;
+        }
+        .lecadre {
+            position:absolute;
+            z-index: 0;
+            height: 325px;
+            width: 1050px;
+            top: 85px;
+            left: 50px;
+        }
+    }
     
 }
 
-.mapadresse {
-    display: flex;
-    justify-content: flex-start;
-    margin: 150px;
-    position:relative;
-}
 
-.Adresse {
-    color: $blanc;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    margin-left: 100px ;
-    justify-content: center;
-    font-family: $text;
-}
 
 .ounoustrouver {
     margin: 10px 0px 20px 0px;
     font-weight: 700;
     font-size: 27px;
-
-
 }
+
+
 
 .cinemalefestivaladress, .adresseducine {
     margin-bottom: 20px;
 }
 
 
-.lecadre {
-    position:absolute;
-    z-index: 0;
-    width: 1250px;
-	height: 325px;
-    top: 85px;
-    left: 50px;
-}
-
-iframe {
-    position: relative;
-    z-index: 2; 
-}
 
 .button-align{
     display: flex;
@@ -288,12 +317,12 @@ iframe {
 }
 
 .titre-conteneur{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 // page film
@@ -318,91 +347,78 @@ iframe {
 .affiche{
     display: flex;
     flex-direction: column;
+    img{
+        width: 325px;
+        height: auto;
+    }
+    span{
+        background-color: $orange;
+        font-family: $titre;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px;
+    }
+    b{
+        background-color: $noir;
+        font-family: $titre;
+        font-size: 20px;
+        font-weight: 700;
+        color: $blanc;
+        padding: 10px;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: $margeMobile;
+        font-family: $text;
+        font-weight: bold;
+        margin: 50px 0;
+    }
 }
 
-.affiche img{
-    width: 325px;
-    height: auto;
-}
-
-.affiche span{
-    background-color: $orange;
-    font-family: $titre;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px;
-}
-
-.affiche b{
-    background-color: $noir;
-    font-family: $titre;
-    font-size: 20px;
-    font-weight: 700;
-    color: $blanc;
-    padding: 10px;
-}
-
-.affiche div{
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-top: $margeMobile;
-    font-family: $text;
-    font-weight: bold;
-    margin: 50px 0;
-}
 
 .description{
     margin-left: $margeDesktop;
-}
-
-.description h1{
-    font-size: 48px;
-    font-family: $titre;
-    line-height: 60px;
-    margin-bottom: 90px;
-}
-
-.description h1 b{  
-    font-weight: 700;
-    background-color: $jaune;
-    padding: 3px 20px;
-    font-size: 48px;
-}
-
-.description h1 span{
-    font-weight: 400;
-    background-color: $jaune;
-    padding: 5px 20px;
-}
-
-.description p, .description h4{
-    margin: 30px 0;
-}
-
-.description h4{
-    font-family: $titre;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.description{
     margin-left: 100px ;
     font-family: $titre;
-}
-.description p{
-    font-family: $text;
-    padding-right: 300px;
-    line-height: 30px;
+    h1{
+        font-size: 48px;
+        font-family: $titre;
+        line-height: 60px;
+        margin-bottom: 90px;
+        b{
+            font-weight: 700;
+            background-color: $jaune;
+            padding: 3px 20px;
+            font-size: 48px;
+        }
+        span{
+            font-weight: 400;
+        background-color: $jaune;
+        padding: 5px 20px;
+        }
+    }
+    h4{
+        font-family: $titre;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 30px 0;
+    }
+    p{
+        font-family: $text;
+        padding-right: 150px;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+    b{
+        font-family: $titre;
+        font-size: 16px;
+        font-weight: 700;
+    }
 }
 
-.description b{
-    font-family: $titre;
-    font-size: 16px;
-    font-weight: 700;
-
-}
 
 .horaires{
     margin-left: $margeDesktop;
@@ -419,3 +435,4 @@ iframe {
     }
 
 }
+
