@@ -5,31 +5,6 @@ footer{
     color: $blanc;
 }
 
-.footer-bar{
-    background: $orange;
-    position: relative;
-    height: 25px;
-    width: 100vw;
-
-    ::before{
-        position: absolute;
-        background: $rouge;
-        width: 33%;
-        top: 0;
-        left: 0;
-        content: ' ';
-    }
-
-    ::after{
-        position: absolute;
-        background: $jaune;
-        width: 33%;
-        top: 0;
-        right: 0;
-        content: ' ';
-    }
-}
-
 .logo-footer{
     margin-top: 30px;
     height: 100%;

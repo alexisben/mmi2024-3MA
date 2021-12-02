@@ -86,12 +86,12 @@ title: Bienvenue sur la page d'accueil
             </figure>
         </div>
     </div>
-    {%include red_button.html content="Tout les films à l'affiche" %}
+    {%include button.html content="Tout les films à l'affiche" %}
 </section>  
-
+{% include transition-bar.html %}
 <section class="container-fluid evnmt">
     <section class="container">
-            {% include titre.html content="Événements" %}
+        {% include titre.html content="Événements" %}
         <div class="row evenements">
             <div class="col-lg-6 festival my_col">
                 <div class="col-lg-6 offset-lg-3">
@@ -107,8 +107,6 @@ title: Bienvenue sur la page d'accueil
             </div>
         </div>
     </section>
-
-
     <section class="container cinema">
         <h2 class="h2_cinema">Le Cinéma</h2>
         <div class="row cinema">
@@ -124,7 +122,7 @@ title: Bienvenue sur la page d'accueil
                 cinéma d'animation ainsi qu'aux films à effets spéciaux. Le<br />
                 cinéma vous accueil avec ses 368 places, séances 3D<br />
                 accessibles pour tous.</p>
-                {%include red_button.html content="Toute l'histoire" %}
+                {%include button.html content="Toute l'histoire" %}
             </div>
             <div class="col-lg-6 my_col">
                 <img class="img_cinema" src="../assets/img/img_cinema.png" alt="image du cinéma">
@@ -132,7 +130,6 @@ title: Bienvenue sur la page d'accueil
         </div>
         
     </section>
-     
     <section>
         <h2 class="h2_horaires">Horaires</h2>
         <ul class="liste_horaires">
