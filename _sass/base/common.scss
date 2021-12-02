@@ -189,10 +189,6 @@ figcaption{
     font-weight: 300;
 }
 
-.cinema p{
-    margin-bottom: 50px;
-}
-
 .cinema h3{
     font-size: 24px;
     font-weight: 700;
@@ -283,4 +279,9 @@ iframe {
     font-size: 48px;
     color: $blanc;
 
+}
+// page film
+
+.imgfond{
+    background-image: url("../../assets/img/Affiche de film/7jours.png");
 }
