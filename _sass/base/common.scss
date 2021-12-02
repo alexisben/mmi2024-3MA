@@ -464,7 +464,7 @@ figcaption{
         }
     }
     p{
-        margin-bottom: 25px;
+        margin: 25px 0;
         text-align: center;
     }
 }
@@ -480,3 +480,14 @@ figcaption{
 
 }
 
+.voir_seances{
+    background-color: $noir;
+    height: 350px;
+    position: relative;
+    div{
+        position: absolute;
+        top: 0;
+        left: 35%;
+        top: 40%;
+    }
+}
