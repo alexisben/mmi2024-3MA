@@ -290,6 +290,7 @@ iframe {
 
 .imgfond{
     background-image: url("../../assets/img/Affiche de film/7jours.png");
+}
 .top-page{
     display: flex;
     flex-direction: column;
@@ -343,5 +344,16 @@ iframe {
 .description{
     margin-left: 100px ;
     font-family: Raleway, sans-serif;
+
+}
+
+.video {
+
+    display:flex;
+    justify-content: center;
+
+    div iframe:last-child{
+        padding-left: 50px;
+    }
 
 }
