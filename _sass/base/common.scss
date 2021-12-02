@@ -302,11 +302,10 @@ iframe {
 .top-page{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
 }
 
 .film_hero{
-    height: 100vh;
+    height: 50vh;
     background-position: center;
     background-size: cover;
 }
@@ -387,6 +386,8 @@ iframe {
 
 .description p{
     font-family: $text;
+    padding-right: 300px;
+    line-height: 30px;
 }
 
 .description b{
