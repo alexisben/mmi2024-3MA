@@ -286,35 +286,61 @@ iframe {
     color: $blanc;
 
 }
+
+.titre-conteneur{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
 // page film
 
-.imgfond{
-    background-image: url("../../assets/img/Affiche de film/7jours.png");
-}
 .top-page{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
 }
 
 .film_hero{
-    height: calc(100vh - 150px);
+    height: 50vh;
     background-position: center;
     background-size: cover;
 }
 
 .film_info{
     display: flex;
-    margin:0 var(--margeDesktop);
-    margin-top: -140px;
+    margin-top: -170px;
+    margin-left: $margeDesktop;
 }
+
 .affiche{
     display: flex;
     flex-direction: column;
 }
 
 .affiche img{
-    width: 240px;
+    width: 325px;
+    height: auto;
+}
+
+.affiche span{
+    background-color: $orange;
+    font-family: $titre;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+.affiche b{
+    background-color: $noir;
+    font-family: $titre;
+    font-size: 20px;
+    font-weight: 700;
+    color: $blanc;
+    padding: 10px;
 }
 
 .affiche div{
@@ -322,26 +348,71 @@ iframe {
     justify-content: space-between;
     text-transform: uppercase;
     font-size: 18px;
-    margin-top: var(--margeMobile);
+    margin-top: $margeMobile;
     font-family: $text;
     font-weight: bold;
+    margin: 50px 0;
 }
 
-.affiche div span{
-    background-color: var(--clementine);
-    color: var(--noir);
-    padding: 5px;
+.description{
+    margin-left: $margeDesktop;
+}
+
+.description h1{
+    font-size: 48px;
+    font-family: $titre;
+    line-height: 60px;
+    margin-bottom: 90px;
+}
+
+.description h1 b{  
     font-weight: 700;
+    background-color: $jaune;
+    padding: 3px 20px;
+    font-size: 48px;
 }
 
-.affiche div b{
-    background-color: var(--noir);
-    color: var(--blanc);
-    padding: 5px 10px;
+.description h1 span{
+    font-weight: 400;
+    background-color: $jaune;
+    padding: 5px 20px;
+}
+
+.description p, .description h4{
+    margin: 30px 0;
+}
+
+.description h4{
+    font-family: $titre;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .description{
     margin-left: 100px ;
     font-family: $titre;
+}
+.description p{
+    font-family: $text;
+    padding-right: 300px;
+    line-height: 30px;
+}
+
+.description b{
+    font-family: $titre;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.video {
+
+    display:flex;
+    justify-content: center;
+    padding-bottom: 80px;
+
+    div iframe:last-child{
+        padding-left: 70px;
+    }
+
 }
