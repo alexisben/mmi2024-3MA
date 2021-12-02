@@ -3,12 +3,8 @@ body {
     font-family: serif;
 }
 
-.row_hero{
-    margin-top: 50px;
-}
-
 .container_img{
-    border: 3px solid darkorange;
+
     background-image: url("../../assets/img/hero.png");
     height: 587px;
     background-repeat: no-repeat;
@@ -16,15 +12,6 @@ body {
     font-family: $text;
     position: relative;
 
-}
-
-.h2_films{
-    text-align: center;
-    margin-bottom: 70px;
-    margin-top: 150px;
-    font-family: $titre;
-    font-weight: 700;
-    font-size: 48px;
 }
 
 ul{
@@ -36,7 +23,7 @@ ul{
     font-size: 20px;
 }
 
-li:hover{
+.filtre:hover{
     font-weight: 600;
 }
 
@@ -90,25 +77,10 @@ li{
     position: absolute;
     right: 0;
     bottom: 0;
-
-}
-
-
-.container{
-    border: 2px solid black;
-}
-
-.row{
-    border: 2px solid red;
 }
 
 .rowafiche{
     margin: 100px 0;
-}
-
-.my_col{
-    border: 2px solid yellow;
-    height: 100%;
 }
 
 .FA{
@@ -171,12 +143,12 @@ figcaption{
     font-weight: 700;
 }
 
-.h2_evnmt, .h2_cinema, .h2_horaires{
-    margin: 80px 0;
+.h2_cinema {
+    padding: 100px 0;
     text-align: center;
     font-family: $titre;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 48px;
     color: $blanc;
 }
 
@@ -184,10 +156,14 @@ figcaption{
     background-color: $noir;
     font-family: $titre;
     
+    .titre{
+        color: $blanc;
+    }
 }
 
 .img_cinema{
     width: 100%;
+    
 }
 
 .cinema{
@@ -213,18 +189,13 @@ figcaption{
     font-weight: 300;
 }
 
-.cinema p{
-    margin-bottom: 50px;
-}
-
 .cinema h3{
     font-size: 24px;
     font-weight: 700;
 }
 
 .my_col_cinema{
-    border: 2px solid yellow;
-    height: 424px;
+    height: 494px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -238,7 +209,9 @@ figcaption{
 .liste_horaires{
     text-align: center;
     color: $orange;
-    padding-bottom: 80px;
+    padding-bottom: 150px;
+    display: flex; 
+    flex-direction: column;
 }
 
 .liste_horaires b{
@@ -247,6 +220,68 @@ figcaption{
 }
 
 .liste_horaires li{
-    padding: 20px 0;
+    padding: 15px 0;
+    margin: 0px;
     
+}
+
+.mapadresse {
+    display: flex;
+    justify-content: flex-start;
+    margin: 150px;
+    position:relative;
+}
+
+.Adresse {
+    color: $blanc;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-left: 100px ;
+    justify-content: center;
+    font-family: $text;
+}
+
+.ounoustrouver {
+    margin: 10px 0px 20px 0px;
+    font-weight: 700;
+    font-size: 27px;
+
+
+}
+
+.cinemalefestivaladress, .adresseducine {
+    margin-bottom: 20px;
+}
+
+
+.lecadre {
+    position:absolute;
+    z-index: 0;
+    width: 1250px;
+	height: 325px;
+    top: 85px;
+    left: 50px;
+}
+
+iframe {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.h2_horaires {
+    margin: 150px 0px 75px 0px;
+    text-align: center;
+    font-family: $titre;
+    font-weight: 700;
+    font-size: 48px;
+    color: $blanc;
+
+}
+// page film
+
+.imgfond{
+    background-image: url("../../assets/img/Affiche de film/7jours.png");
 }
