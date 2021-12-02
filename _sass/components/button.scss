@@ -1,0 +1,13 @@
+.button{
+    background-color: $rouge;
+    color: $noir;
+
+    border-radius: 0px;
+    padding: 30px;
+
+    p{
+        font-family: $text;
+        font-size: 26px;
+        font-weight: 500;
+    }
+}
