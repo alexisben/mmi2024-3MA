@@ -288,6 +288,58 @@ iframe {
 }
 // page film
 
-.imgfond{
-    background-image: url("../../assets/img/Affiche de film/7jours.png");
+.top-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.film_hero{
+    height: calc(100vh - 150px);
+    background-position: center;
+    background-size: cover;
+}
+
+.film_info{
+    display: flex;
+    margin:0 var(--margeDesktop);
+    margin-top: -140px;
+}
+.affiche{
+    display: flex;
+    flex-direction: column;
+}
+
+.affiche img{
+    width: 240px;
+}
+
+.affiche div{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: var(--margeMobile);
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.affiche div span{
+    background-color: var(--clementine);
+    color: var(--noir);
+    padding: 5px;
+    font-weight: 700;
+}
+
+.affiche div b{
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+.description{
+    margin-left: 100px ;
+    font-family: Raleway, sans-serif;
+
 }
