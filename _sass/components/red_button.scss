@@ -1,6 +1,11 @@
 button{
-    background-color: $rouge;
-    color: $noir;
-    border: none;
-    
+    font-family: 'Work Sans', sans-serif;
+      font-size: 22px;
+      background-color: $rouge;
+      color: $noir;
+      border: none;
+      border-radius: 3px;
+      padding: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
 }
