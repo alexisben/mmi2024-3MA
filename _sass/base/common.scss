@@ -471,12 +471,20 @@ figcaption{
 
 .video{
     display:flex;
-    justify-content: center;
+    align-items: center;
     padding-bottom: 80px;
-
+    flex-direction: column;
     div iframe:last-child{
-        padding-left: 70px;
-    }
+         padding-left: 70px;
 
-}
+    
+    } 
+    div{
+        display:flex;
+
+    }
+}       
+
+
+
 
