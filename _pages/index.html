@@ -29,9 +29,7 @@ title: Bienvenue sur la page d'accueil
 <!-- Section Film à l'affiche -->
 
     <section>
-        <div class="titre-conteneur">
-            {% include titre.html content="Films à l'affiche" %}
-        </div>
+        {% include titre.html content="Films à l'affiche" %}
         <!-- <h2 class=h2_films>Films à l'affiche</h2> -->
         <ul>
            <li class="filtre">Aujourd'hui</li>
@@ -89,20 +87,12 @@ title: Bienvenue sur la page d'accueil
             </figure>
         </div>
     </div>
-    <div class="button-align">
-        {%include button.html content="Tout les films à l'affiche"%}
-    </div>
+    {%include button.html content="Tout les films à l'affiche" %}
 </section>  
-</section>
 {% include transition-bar.html %}
-
-        <!-- Section Événements -->
-        
 <section class="container-fluid evnmt">
-    <div class="titre-conteneur">
-        {% include titre.html content="Événements" %}
-    </div>
     <section class="container">
+        {% include titre.html content="Événements" %}
         <div class="row evenements">
             <div class="col-lg-6 festival my_col">
                 <div class="col-lg-6 offset-lg-3">
@@ -163,7 +153,15 @@ title: Bienvenue sur la page d'accueil
                 </div>
             </div>
         </div>
-
+        <img class="lecadre" src="../assets/img/rect_jaune.png"alt= "un vilain petit cadre orangé"/>
+    
+        <div class="Adresse">   
+            <h3 class="ounoustrouver">Où nous trouver ?</h3> 
+            <p class= "cinemalefestivaladress "> Cinéma "Le Festival"</p> 
+            <p class= "adresseducine"> 151 boulevard ALBERT 1er (barrière de Bègles)</p>
+            <p> 33130 Bègles </p>
+        </div>
+        
     </section>
 
 <!-- Section Horraire -->
@@ -176,6 +174,10 @@ title: Bienvenue sur la page d'accueil
             <li>Dimanche<br /><b>10h-20h</b></li>
  
         </ul>
+
     </section>
+
+
+    
+    
 </section>
- 
