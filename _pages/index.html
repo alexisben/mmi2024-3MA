@@ -27,7 +27,9 @@ title: Bienvenue sur la page d'accueil
     </section>
 
     <section>
-        {% include titre.html content="Films à l'affiche" %}
+        <div class="titre-conteneur">
+            {% include titre.html content="Films à l'affiche" %}
+        </div>
         <!-- <h2 class=h2_films>Films à l'affiche</h2> -->
         <ul>
            <li class="filtre">Aujourd'hui</li>
@@ -92,9 +94,14 @@ title: Bienvenue sur la page d'accueil
 </section>  
 </section>
 {% include transition-bar.html %}
+
+        <!-- Section Événements -->
+        
 <section class="container-fluid evnmt">
-    <section class="container">
+    <div class="titre-conteneur">
         {% include titre.html content="Événements" %}
+    </div>
+    <section class="container">
         <div class="row evenements">
             <div class="col-lg-6 festival my_col">
                 <div class="col-lg-6 offset-lg-3">

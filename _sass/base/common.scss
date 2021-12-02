@@ -286,8 +286,24 @@ iframe {
     color: $blanc;
 
 }
+
+.titre-conteneur{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
 // page film
 
+
+.top-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
 
 .film_hero{
     height: 100vh;
