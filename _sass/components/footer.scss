@@ -1,33 +1,8 @@
 footer{
     background: $noir;
-    height: 50vh;
+    height: 100%;
     font-family: 'Montserrat', Arial, sans-serif;
     color: $blanc;
-}
-
-.footer-bar{
-    background: $orange;
-    position: relative;
-    height: 25px;
-    width: 100vw;
-
-    ::before{
-        position: absolute;
-        background: $rouge;
-        width: 33%;
-        top: 0;
-        left: 0;
-        content: ' ';
-    }
-
-    ::after{
-        position: absolute;
-        background: $jaune;
-        width: 33%;
-        top: 0;
-        right: 0;
-        content: ' ';
-    }
 }
 
 .logo-footer{
@@ -40,6 +15,7 @@ footer{
     display: flex;
 
     svg{
+        color: $blanc;
         width: 100%;
         display: flex;
         justify-content: space-between;
