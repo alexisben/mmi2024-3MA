@@ -3,6 +3,10 @@ body {
     font-family: serif;
 }
 
+.row_hero{
+    margin-top: 50px;
+}
+
 .container_img{
     border: 3px solid darkorange;
     background-image: url("../../assets/img/hero.png");
@@ -64,10 +68,16 @@ li{
 }
 
 .container_img h2{
+<<<<<<< HEAD
     color: $orange;
     font-size: 22px;
     font-weight: 400;
     line-height: 25px;
+=======
+    color: $orange; 
+    font-size: 26px;
+    font-weight: 400;
+>>>>>>> f818e7dd311e565254c8536903db903035707034
 }
 
 .scan_pass {
@@ -96,9 +106,7 @@ li{
 }
 
 .row{
-
     border: 2px solid red;
-
 }
 
 .rowafiche{
@@ -107,6 +115,7 @@ li{
 
 .my_col{
     border: 2px solid yellow;
+    height: 100%;
 }
 
 .FA{
@@ -119,3 +128,132 @@ figcaption{
     font-family: $text;
 }
 
+.evenements{
+    height: 317px;
+    display: flex;
+    justify-content: center;
+    font-family: $titre;
+ }
+
+.festival{
+    background-image: url("../../assets/img/img_festival.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s ease-in;
+    background-position: center;
+}
+
+.activite{
+    background-image: url("../../assets/img/img_enfants.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s ease-in;
+    background-position: center;
+}
+
+.activite:hover{
+    background-size: 140%;
+}
+
+.festival:hover{
+    background-size: 140%;
+    
+}
+
+.evenements p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.evenements b{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.h2_evnmt, .h2_cinema, .h2_horaires{
+    margin: 80px 0;
+    text-align: center;
+    font-family: $titre;
+    font-weight: 700;
+    font-size: 36px;
+    color: $blanc;
+}
+
+.evnmt{
+    background-color: $noir;
+    font-family: $titre;
+    
+}
+
+.img_cinema{
+    width: 100%;
+}
+
+.cinema{
+    color: $blanc;
+    font-family: $text;
+}
+
+.cinema button{
+    border: none;
+    background-color: $rouge;
+    padding: 17px 50px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 60px;
+    display: inline;
+    position: absolute;
+    bottom: 10px;
+}
+
+.cinema p, .cinema h6{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+.cinema p{
+    margin-bottom: 50px;
+}
+
+.cinema h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.my_col_cinema{
+    border: 2px solid yellow;
+    height: 424px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.my_col_cinema div{
+    margin: 50px 0;
+}
+
+.liste_horaires{
+    text-align: center;
+    color: $orange;
+    padding-bottom: 80px;
+}
+
+.liste_horaires b{
+    color: $blanc;
+    font-weight: 700;
+}
+
+.liste_horaires li{
+    padding: 20px 0;
+    
+}
