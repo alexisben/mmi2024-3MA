@@ -30,7 +30,6 @@ title: Bienvenue sur la page d'accueil
 
     <section>
         {% include titre.html content="Films à l'affiche" %}
-        <!-- <h2 class=h2_films>Films à l'affiche</h2> -->
         <ul>
            <li class="filtre">Aujourd'hui</li>
            <li class="filtre">Cette semaine</li>
@@ -115,7 +114,7 @@ title: Bienvenue sur la page d'accueil
 <!-- Section Le Cinema -->
 
     <section class="container cinema">
-        <h2 class="h2_cinema">Le Cinéma</h2>
+        {% include titre.html content="Le Cinéma" %}
         <div class="row cinema">
             <div class="col-lg-6 my_col_cinema">
                 <div>
@@ -156,15 +155,6 @@ title: Bienvenue sur la page d'accueil
                 </div>
             </div>
         </div>
-        <img class="lecadre" src="../assets/img/rect_jaune.png"alt= "un vilain petit cadre orangé"/>
-    
-        <div class="Adresse">   
-            <h3 class="ounoustrouver">Où nous trouver ?</h3> 
-            <p class= "cinemalefestivaladress "> Cinéma "Le Festival"</p> 
-            <p class= "adresseducine"> 151 boulevard ALBERT 1er (barrière de Bègles)</p>
-            <p> 33130 Bègles </p>
-        </div>
-        
     </section>
 
 <!-- Section Horraire -->
@@ -175,8 +165,6 @@ title: Bienvenue sur la page d'accueil
             <li>Lundi-Vendredi<br /><b>10h-22h</b></li>
             <li>Samedi<br /><b>12h-00h</b></li>
             <li>Dimanche<br /><b>10h-20h</b></li>
- 
         </ul>
-
     </section> 
 </section>
