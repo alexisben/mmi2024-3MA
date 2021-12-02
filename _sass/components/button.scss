@@ -1,24 +1,38 @@
-.button{
+button{
+    position: absolute;
     width: 400px;
     background-color: $rouge;
     color: $noir;
     display: flex;
     justify-content: center;
     align-content: center;
-    border-radius: 0px;
+    transition: 0.5ms;
+    border-style: none;
+    margin-bottom: 30px;
 
     p{
-        display: flex;
         padding-top: 25px;
         padding-bottom: 25px;
+        display: flex;
         font-family: $titre;
-        font-size: 26px;
+        font-size: 20px;
         font-weight: 800;
     }
 
     img{
+        align-self: center;
+        height: 100%;
         padding-left: 20px;
-        display: flex;
+        display: table;
+        align-self: center;
         width: 40px;
     }
 }
+
+button:hover{
+    transition: 0.5ms;
+    fill: $rouge;
+    background: $blanc;
+    color: $rouge;
+    border: solid 5px $rouge;
+}   
