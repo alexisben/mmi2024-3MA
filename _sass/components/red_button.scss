@@ -1,14 +1,20 @@
-button{
-    font-family: $texte;
-    font-size: 22px;
+.redbutton{
+    font-family: $text;
+    font-size: 26px;
+    font-weight: 500;
     background-color: $rouge;
     color: $noir;
     border: none;
     border-radius: 0px;
+    padding: 30px;
     cursor: pointer;
-    margin-bottom: 20px;
 }
 
-button:hover{
+.redbutton:hover{
     background-color: $orange;
+}
+
+.but-a{
+    margin-bottom: 70px;
+    margin-left: 480px;
 }
