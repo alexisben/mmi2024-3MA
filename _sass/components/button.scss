@@ -31,8 +31,7 @@ button{
 
 button:hover{
     transition: 0.5ms;
-    fill: $rouge;
     background: $blanc;
     color: $rouge;
     border: solid 5px $rouge;
-}   
+}

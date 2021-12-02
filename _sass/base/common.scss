@@ -174,36 +174,42 @@ figcaption{
 .evnmt{
     background-color: $noir;
     font-family: $titre;
-    
-    .titre{
-        color: $noir;
+}
+
+.titre-align, .button-align{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    color: $noir;
+
+}
+
+.button-align-bis{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: $noir;
+
+    :hover{
+        background: $noir;
     }
 }
 
 .img_cinema{
     width: 100%;
-    
 }
 
 .cinema{
     color: $blanc;
     font-family: $text;
-    button{
-        border: none;
-        background-color: $rouge;
-        padding: 17px 50px;
-        font-size: 16px;
-        font-weight: 700;
-        margin-top: 60px;
-        display: inline;
-        position: absolute;
-        bottom: 10px;
-    }
+
     h3{
         font-size: 24px;
         font-weight: 700;
     }
-    p{
+    .cinema-text{
         font-size: 14px;
         line-height: 17px;
         font-weight: 300;
@@ -322,10 +328,6 @@ figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-.titre-align{
     width: 100%;
 }
 
@@ -464,7 +466,7 @@ figcaption{
         }
     }
     p{
-        margin-bottom: 25px;
+        margin: 25px 0;
         text-align: center;
     }
 }
@@ -493,3 +495,14 @@ figcaption{
     color: black;
 }
 
+.voir_seances{
+    background-color: $noir;
+    height: 350px;
+    position: relative;
+    div{
+        position: absolute;
+        top: 0;
+        left: 35%;
+        top: 40%;
+    }
+}

@@ -50,6 +50,9 @@ title: Bienvenue sur la page du film
     </ul>
     <p>Réserver votre ticket selon la séance de votre choix</p>
 </section>
+
+
+
 <section class="video">
 
 
@@ -67,12 +70,18 @@ title: Bienvenue sur la page du film
     
 </section>
 
-<section class="photo_slider">
 
+<section class="photo_slider">
+    <div>
+        {% include titre.html content="Photo" %}
+    </div>
+    
 </section>
 
 <section class="voir_seances">
-    {%include button.html content="Voir plus de séances"%}
+    <div>
+        {%include button.html content="Voir plus de séances"%}
+    </div>
 </section>
 
 
