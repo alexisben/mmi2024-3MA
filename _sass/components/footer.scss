@@ -1,6 +1,6 @@
 footer{
     background: $noir;
-    height: 50vh;
+    height: 100%;
     font-family: 'Montserrat', Arial, sans-serif;
     color: $blanc;
 }
@@ -40,6 +40,7 @@ footer{
     display: flex;
 
     svg{
+        color: $blanc;
         width: 100%;
         display: flex;
         justify-content: space-between;

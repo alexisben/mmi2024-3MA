@@ -12,11 +12,39 @@ body {
     background-image: url("../../assets/img/hero.png");
     height: 587px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     font-family: $text;
     position: relative;
 
 }
+
+.h2_films{
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 150px;
+    font-family: $titre;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: $titre;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+li:hover{
+    font-weight: 600;
+}
+
+li{
+    margin: 20px 52px;
+}
+
+
 
 .container_hero{
     height: 100%;
