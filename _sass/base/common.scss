@@ -175,8 +175,12 @@ figcaption{
     background-color: $noir;
     font-family: $titre;
     
-    .titre{
-        color: $noir;
+    .titre-align{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        padding-top: 100px;
     }
 }
 
@@ -322,10 +326,6 @@ figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-.titre-align{
     width: 100%;
 }
 
