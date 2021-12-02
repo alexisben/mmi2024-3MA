@@ -3,6 +3,8 @@ layout: default
 title: Bienvenue sur la page du film
 ---
 
+<!-- Haut de page -->
+
 <section class="top-page">
     <div class="film_hero" style="background-image : url('../assets/img/photo_hero.jpg');"></div>
     <section class="film_info">
@@ -32,6 +34,9 @@ title: Bienvenue sur la page du film
     </section>
 
 </section>
+{% include titre.html content="Bande d'annonce" %}
+
+    <!-- Programmation du film -->
 
 <section class="horaires">
     <h2>Horaires :</h2>
@@ -45,6 +50,7 @@ title: Bienvenue sur la page du film
     <p>Réserver votre ticket selon la séance de votre choix</p>
 </section>
 <section class="video">
+    
     <div>
         <iframe class="BAvf" width="632" height="395" src="https://www.youtube.com/embed/9jDoyv7KYVM" title="BandeAnnonceVf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="BAvo" width="632" height="395" src="https://www.youtube.com/embed/7WEKLi_DL00" title="BandeAnnonceVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
