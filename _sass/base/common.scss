@@ -291,13 +291,13 @@ figcaption{
             height: 325px;
             width: 1050px;
             top: 85px;
-            left: 50px;
+            left: 0;
+            border: solid $jaune 5px;
+            margin-left: 150px;
         }
     }
     
 }
-
-
 
 .ounoustrouver {
     margin: 10px 0px 20px 0px;
@@ -494,9 +494,6 @@ figcaption{
 
     }
 }       
-
-
-
 
 .voir_seances{
     background-color: $noir;
