@@ -116,7 +116,7 @@ ul{
 }
 
 .rowafiche{
-    margin: 100px 0;
+    margin-top: 100px;
     @media screen and (max-width:400px){
         margin: 0px 50px;
     }
@@ -211,6 +211,11 @@ figcaption{
     margin-bottom: 100px;
     padding-top: 100px;
     color: $noir;
+    @media screen and (max-width:400px) {
+        margin-bottom: 50px;
+        padding-top: 50px;
+
+    }
 
 }
 
@@ -530,6 +535,11 @@ figcaption{
     }
 }
 
+.horaires li:hover{
+    background-color: $orange;
+    color: $noir;
+}
+
 .video{
     display:flex;
     align-items: center;
@@ -581,5 +591,4 @@ figcaption{
     div iframe:last-child{
         padding-left: 70px;
     }
-
 }
