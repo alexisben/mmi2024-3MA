@@ -1,6 +1,7 @@
 body {
     color: $noir;
     font-family: serif;
+    overflow: hidden;
 }
 
 .container_img{
@@ -283,13 +284,13 @@ figcaption{
             height: 325px;
             width: 1050px;
             top: 85px;
-            left: 50px;
+            left: 0;
+            border: solid $jaune 5px;
+            margin-left: 150px;
         }
     }
     
 }
-
-
 
 .ounoustrouver {
     margin: 10px 0px 20px 0px;
@@ -487,6 +488,13 @@ figcaption{
     }
 }       
 
+<<<<<<< HEAD
+=======
+.carousel-control-next{
+    color: black;
+}
+
+>>>>>>> 552e5e82f4d8d0ac578085ea3b6bc7d4284849bb
 .voir_seances{
     background-color: $noir;
     height: 350px;
