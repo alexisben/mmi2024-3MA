@@ -565,3 +565,23 @@ figcaption{
     padding: 20px;
     margin-right: 450px;
 }
+<<<<<<< HEAD
+=======
+
+.button-align-bis{
+    position: relative;
+    // width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 100px;
+    padding-top: 80px;
+
+    div iframe:last-child{
+        padding-left: 70px;
+    }
+
+}
+>>>>>>> 683e489452fbf9f7aa9523468554599c0b1f70a8
