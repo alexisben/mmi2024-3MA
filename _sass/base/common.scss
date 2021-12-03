@@ -1,6 +1,7 @@
 body {
     color: $noir;
     font-family: serif;
+    overflow: hidden;
 }
 
 .container_img{
@@ -283,13 +284,13 @@ figcaption{
             height: 325px;
             width: 1050px;
             top: 85px;
-            left: 50px;
+            left: 0;
+            border: solid $jaune 5px;
+            margin-left: 150px;
         }
     }
     
 }
-
-
 
 .ounoustrouver {
     margin: 10px 0px 20px 0px;
@@ -486,10 +487,6 @@ figcaption{
 
     }
 }       
-
-.d-block{
-
-}
 
 .carousel-control-next{
     color: black;
