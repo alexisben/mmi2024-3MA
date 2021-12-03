@@ -11,8 +11,13 @@ body {
     background-size: cover;
     font-family: $text;
     position: relative;
+    @media screen and (max-width:400px) {
+        height: 500px;
+        
+    }
 
 }
+
 
 ul{
     display: flex;
@@ -23,14 +28,23 @@ ul{
     font-size: 20px;
 }
 
+.filtre{
+    margin: 0 20px;
+}
+
 .filtre:hover{
     font-weight: 600;
 }
 
-li{
-    margin: 20px 52px;
+.filtres{
+    display: flex;
+    margin: 0 $margeDesktop;
+    @media screen and (max-width:400px){
+        display: inline-block;
+        text-align: center;
+        margin-top: 10px;
+    }
 }
-
 
 
 .container_hero{
@@ -42,6 +56,9 @@ li{
         b{
             color: $blanc;
             font-size: 64px;
+        }
+        @media screen and (max-width:400px) {
+            font-size: 24px;
         }
     }
 
@@ -56,6 +73,9 @@ li{
     color: $orange; 
     font-size: 26px;
     font-weight: 400;
+    @media screen and (max-width:400px){
+        font-size: 14px;
+    }
 }
 
 .scan_pass {
@@ -67,7 +87,12 @@ li{
     right: 14px;
     bottom: 110px;
     letter-spacing: 2px;
+    font-size: 20px;
     font-weight: 500;
+    @media screen and (max-width:400px) {
+        font-size: 10px;
+        bottom: 85px;
+    }
 
 }
 
@@ -75,6 +100,10 @@ li{
     position: absolute;
     right: 0;
     bottom: 0;
+    width: auto;
+    @media screen and (max-width:400px) {
+        width: 150px;
+    }
 }
 
 .rowafiche{
@@ -140,27 +169,6 @@ figcaption{
     }
 }
 
-
-
-// .festival:hover{
-//     background-size: 140%;
-    
-// }
-
-// .evenements a{
-//     font-size: 16px;
-//     font-weight: 400;
-//     margin: 0;
-// }
-
-// .evenements a:hover{
-//     color: gray;
-// }
-
-// .evenements b{
-//     font-size: 22px;
-//     font-weight: 700;
-// }
 
 .h2_cinema {
     padding: 100px 0;
