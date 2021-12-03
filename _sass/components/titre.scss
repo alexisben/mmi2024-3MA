@@ -1,10 +1,8 @@
 .titre{
     text-align: center;
-    margin-bottom: 100px;
-    padding-top: 100px;
     font-family: $titre;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 .titre-shape{
@@ -12,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 100px;
+    width: 350px;
+    height: 70px;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
 }

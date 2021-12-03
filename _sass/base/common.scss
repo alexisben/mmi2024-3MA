@@ -11,8 +11,13 @@ body {
     background-size: cover;
     font-family: $text;
     position: relative;
+    @media screen and (max-width:400px) {
+        height: 500px;
+        
+    }
 
 }
+
 
 ul{
     display: flex;
@@ -23,32 +28,51 @@ ul{
     font-size: 20px;
 }
 
+.filtre{
+    margin: 20px;
+    @media screen and (max-width:400px) {
+        border: solid $noir 2px;
+        margin: 20px 0;
+        padding: 5px;
+    }
+
+}
+
+.filtre:last-child{
+    margin-bottom: 50px;
+}
+
 .filtre:hover{
     font-weight: 600;
 }
 
-li{
-    margin: 20px 52px;
+.filtres{
+    display: flex;
+    margin: 0 $margeDesktop;
+    @media screen and (max-width:400px){
+        display: inline-block;
+        text-align: center;
+    }
 }
-
 
 
 .container_hero{
     height: 100%;
+    h1{
+        color: $blanc;
+        font-size: 48px;
+        font-weight: 700;
+        b{
+            color: $blanc;
+            font-size: 64px;
+        }
+        @media screen and (max-width:400px) {
+            font-size: 24px;
+        }
+    }
 
 }
 
-.container_hero h1 b{
-    color: $blanc;
-    font-size: 64px;
-}
-
-.container_hero h1{
-    color: $blanc;
-    font-size: 48px;
-    font-weight: 700;
-
-}
 
 .h1_hero{
     padding: 50px 0;
@@ -58,6 +82,9 @@ li{
     color: $orange; 
     font-size: 26px;
     font-weight: 400;
+    @media screen and (max-width:400px){
+        font-size: 14px;
+    }
 }
 
 .scan_pass {
@@ -69,7 +96,12 @@ li{
     right: 14px;
     bottom: 110px;
     letter-spacing: 2px;
+    font-size: 20px;
     font-weight: 500;
+    @media screen and (max-width:400px) {
+        font-size: 10px;
+        bottom: 85px;
+    }
 
 }
 
@@ -77,10 +109,22 @@ li{
     position: absolute;
     right: 0;
     bottom: 0;
+    width: auto;
+    @media screen and (max-width:400px) {
+        width: 150px;
+    }
 }
 
 .rowafiche{
     margin: 100px 0;
+    @media screen and (max-width:400px){
+        margin: 0px 50px;
+    }
+}
+
+
+.my_col{
+    margin:15px;
 }
 
 .FA{
@@ -94,10 +138,22 @@ figcaption{
 }
 
 .evenements{
-    height: 317px;
+    height: 327px;
     display: flex;
     justify-content: center;
     font-family: $titre;
+    a{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        &:hover{
+            color: gray;
+        }
+    }
+    b{
+        font-size: 22px;
+        font-weight: 700;
+    }
  }
 
 .festival{
@@ -110,6 +166,12 @@ figcaption{
     flex-direction: column;
     transition: .3s ease-in;
     background-position: center;
+    &:hover{
+        background-size: 140%;
+    }
+    @media screen and (max-width:400px) {
+        margin-bottom: 20px;
+    }
 }
 
 .activite{
@@ -122,26 +184,11 @@ figcaption{
     flex-direction: column;
     transition: .3s ease-in;
     background-position: center;
+    &:hover{
+        background-size: 140%;
+    }
 }
 
-.activite:hover{
-    background-size: 140%;
-}
-
-.festival:hover{
-    background-size: 140%;
-    
-}
-
-.evenements p{
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.evenements b{
-    font-size: 22px;
-    font-weight: 700;
-}
 
 .h2_cinema {
     padding: 100px 0;
@@ -155,44 +202,64 @@ figcaption{
 .evnmt{
     background-color: $noir;
     font-family: $titre;
-    
-    .titre{
-        color: $blanc;
+}
+
+.titre-align, .button-align{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    color: $noir;
+
+}
+
+.button-align-bis{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: $noir;
+
+    :hover{
+        background: $noir;
     }
 }
 
-.img_cinema{
-    width: 100%;
-    
+.my_col_cinema_2{
+    display: flex;
+    .img_cinema{
+        width: 100%;
+        @media screen and (max-width:400px) {
+            justify-self: center;
+        }
+    }
 }
+
 
 .cinema{
     color: $blanc;
     font-family: $text;
+
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .cinema-text{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
+        @media screen and (max-width: 400px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    h6{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
+    }
 }
 
-.cinema button{
-    border: none;
-    background-color: $rouge;
-    padding: 17px 50px;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 60px;
-    display: inline;
-    position: absolute;
-    bottom: 10px;
-}
-
-.cinema p, .cinema h6{
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 300;
-}
-
-.cinema h3{
-    font-size: 24px;
-    font-weight: 700;
-}
 
 .my_col_cinema{
     height: 494px;
@@ -200,11 +267,15 @@ figcaption{
     justify-content: center;
     flex-direction: column;
     position: relative;
+    margin-bottom: 50px;
+    div{
+        margin: 50px 0; 
+    }
+    @media screen and (max-width:400px) {
+        margin-bottom: 0;
+    }
 }
 
-.my_col_cinema div{
-    margin: 50px 0;
-}
 
 .liste_horaires{
     text-align: center;
@@ -212,63 +283,86 @@ figcaption{
     padding-bottom: 150px;
     display: flex; 
     flex-direction: column;
+    @media screen and (max-width:400px) {
+            padding-bottom: 60px;
+    }
+    b{
+        color: $blanc;
+        font-weight: 700;
+    }
+    li{
+        padding: 15px 0;
+        margin: 0px;
+    }
 }
 
-.liste_horaires b{
-    color: $blanc;
-    font-weight: 700;
-}
-
-.liste_horaires li{
-    padding: 15px 0;
-    margin: 0px;
-    
-}
 
 .mapadresse {
+    margin-top: 50px;
     display: flex;
-    justify-content: flex-start;
-    margin: 150px;
-    position:relative;
-}
-
-.Adresse {
-    color: $blanc;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    margin-left: 100px ;
     justify-content: center;
-    font-family: $text;
+    position:relative;
+    z-index: 2; 
+    .mapadressecol_1 {
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width:400px) {
+            width: 327px;
+            height: 327px;
+            order:2
+        }
+    }
+    .mapadressecol_2{
+        display: flex;
+        .Adresse{
+            color: $blanc;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            margin-left: 100px ;
+            justify-content: center;
+            font-family: $text;
+            align-self: center;
+            @media screen and (max-width:400px) {
+                margin: 10px;
+                margin-bottom: 25px;
+                align-self: center;
+                order: 1;
+            }   
+        }
+        .lecadre {
+            position:absolute;
+            z-index: 0;
+            height: 325px;
+            width: 1050px;
+            top: 85px;
+            left: 0;
+            border: solid $jaune 5px;
+            margin-left: 150px;
+            @media screen and (max-width:400px) {
+                display: none;
+            }
+        }
+    }
+    
 }
 
 .ounoustrouver {
     margin: 10px 0px 20px 0px;
     font-weight: 700;
     font-size: 27px;
-
-
 }
+
+
 
 .cinemalefestivaladress, .adresseducine {
     margin-bottom: 20px;
 }
 
 
-.lecadre {
-    position:absolute;
-    z-index: 0;
-    width: 1250px;
-	height: 325px;
-    top: 85px;
-    left: 50px;
-}
-
-iframe {
-    position: relative;
-    z-index: 2; 
-}
 
 .button-align{
     display: flex;
@@ -288,15 +382,19 @@ iframe {
 }
 
 .titre-conteneur{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
+// ---
+
 // page film
+
+// --
 
 .top-page{
     display: flex;
@@ -318,88 +416,164 @@ iframe {
 .affiche{
     display: flex;
     flex-direction: column;
+    img{
+        width: 325px;
+        height: auto;
+    }
+    span{
+        background-color: $orange;
+        font-family: $titre;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px;
+    }
+    b{
+        background-color: $noir;
+        font-family: $titre;
+        font-size: 20px;
+        font-weight: 700;
+        color: $blanc;
+        padding: 10px;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: $margeMobile;
+        font-family: $text;
+        font-weight: bold;
+        margin: 50px 0;
+    }
 }
 
-.affiche img{
-    width: 325px;
-    height: auto;
-}
-
-.affiche span{
-    background-color: $orange;
-    font-family: $titre;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px;
-
-}
-
-.affiche b{
-    background-color: $noir;
-    font-family: $titre;
-    font-size: 20px;
-    font-weight: 700;
-    color: $blanc;
-    padding: 10px;
-}
-
-.affiche div{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0;
-}
 
 .description{
     margin-left: $margeDesktop;
-}
-
-.description h1{
-    font-size: 48px;
+    margin-left: 100px ;
     font-family: $titre;
-    line-height: 60px;
-    margin-bottom: 90px;
+    h1{
+        font-size: 48px;
+        font-family: $titre;
+        line-height: 60px;
+        margin-bottom: 90px;
+        b{
+            font-weight: 700;
+            background-color: $jaune;
+            padding: 3px 20px;
+            font-size: 48px;
+        }
+        span{
+            font-weight: 400;
+        background-color: $jaune;
+        padding: 5px 20px;
+        }
+    }
+    h4{
+        font-family: $titre;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 30px 0;
+    }
+    p{
+        font-family: $text;
+        padding-right: 150px;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+    b{
+        font-family: $titre;
+        font-size: 16px;
+        font-weight: 700;
+    }
 }
 
-.description h1 b{  
-    font-weight: 700;
-    background-color: $jaune;
-    padding: 3px 20px;
-    font-size: 48px;
-}
 
-.description h1 span{
-    font-weight: 400;
-    background-color: $jaune;
-    padding: 5px 20px;
-}
-
-.description p, .description h4{
-    margin: 30px 0;
-}
-
-.description h4{
+.horaires{
     font-family: $titre;
-    font-size: 24px;
-    font-weight: 700;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        margin: 50px 0;
+        margin-left: $margeDesktop;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $margeDesktop;
+        li{
+            background-color: $noir;
+            color: $blanc;
+            margin: 0;
+            padding: 6px 50px;
+            text-align: center;
+            line-height: 25px;
+            font-family: $text;
+            font-weight: 400;
+            b{
+                font-weight: 700;
+            }
+            li:first-child{
+                margin-left: 0;
+            }
+            li:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    p{
+        margin: 25px 0;
+        text-align: center;
+    }
 }
 
-.description p{
-    font-family: $text;
-    padding-right: 300px;
-    line-height: 30px;
-}
-
-.description b{
-    font-family: $titre;
-    font-size: 16px;
-    font-weight: 700;
-
-}
-
-.video {
-
+.video{
     display:flex;
+    align-items: center;
+    padding-bottom: 80px;
+    flex-direction: column;
+    div iframe:last-child{
+         padding-left: 70px;
+
+    
+    } 
+    div{
+        display:flex;
+
+    }
+}       
+
+.voir_seances{
+    background-color: $noir;
+    height: 350px;
+}
+
+<<<<<<< HEAD
+.d-block{
+    padding: 250px;
+}
+
+.carousel-control-prev-icon{
+    padding: 20px;
+    margin-left: 450px;
+}
+
+.carousel-control-next-icon{
+    padding: 20px;
+    margin-right: 450px;
+}
+=======
+.button-align-bis{
+    position: relative;
+    // width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     padding-bottom: 100px;
     padding-top: 80px;
 
@@ -407,4 +581,7 @@ iframe {
         padding-left: 70px;
     }
 
+=======
+>>>>>>> e155d7f8c774f3813c0ba536a708852cb4337a2a
 }
+>>>>>>> 85915ed2728a14418b32b5ac71f7670db954be81
