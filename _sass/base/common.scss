@@ -577,9 +577,12 @@ figcaption{
     margin-right: 450px;
 }
 
+<<<<<<< HEAD
 .button-align-bis{
+=======
+.button-align{
+>>>>>>> 66abe7827b328d90afdb8c0f8859230c7f732361
     position: relative;
-    // width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -588,7 +591,11 @@ figcaption{
     padding-bottom: 100px;
     padding-top: 80px;
 
-    div iframe:last-child{
-        padding-left: 70px;
+    :hover{
+        background: $noir;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 66abe7827b328d90afdb8c0f8859230c7f732361
