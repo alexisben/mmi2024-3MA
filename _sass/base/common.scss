@@ -283,6 +283,14 @@ figcaption{
     }
 }
 
+.lien_img{
+    margin: 0;
+}
+
+.col-img img:hover{
+    background-size: 120%;
+}
+
 
 .liste_horaires{
     text-align: center;
@@ -495,9 +503,6 @@ figcaption{
     }
 }
 
-.lien_img{
-    margin: 0;
-}
 
 .horaires{
     font-family: $titre;
