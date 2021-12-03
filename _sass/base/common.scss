@@ -1,12 +1,13 @@
 body {
     color: $noir;
     font-family: serif;
+    background: $blanc;
 }
 
 .container_img{
 
     background-image: url("../../assets/img/hero.png");
-    height: 587px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $text;
@@ -49,6 +50,7 @@ ul{
 .filtres{
     display: flex;
     margin: 0 $margeDesktop;
+    text-align: center;
     @media screen and (max-width:400px){
         display: inline-block;
         text-align: center;
@@ -368,12 +370,12 @@ figcaption{
 }
 
 
-
-.button-align{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 100px;
+.container_affiche{
+    .button-align{
+        :hover{
+            background: $blanc;
+        }
+    }
 }
 
 .h2_horaires {
@@ -593,8 +595,4 @@ figcaption{
     :hover{
         background: $noir;
     }
-
-
 }
-
-
