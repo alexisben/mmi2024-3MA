@@ -7,32 +7,43 @@ header{
     position: sticky;
     top: 0;
     background: $blanc;
-    background-image: url("../../assets/img/banner.png");
-    background-repeat: no-repeat;
-    background-position: top right;
     color: $noir;
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: 400;
-    height: 120px;
+    height:200px;
     z-index: 7;
+
+    @media (min-width:992px) {
+        height: 120px;
+        background-image: url("../../assets/img/banner.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
 }
 
 .header{
     display: grid;
-    align-content: center;
-    grid-template-columns: 33% 33% 33%;
-    height: 120px;
-    align-items: center;
-    // @media screen and (max-width:400px) {
-        
-    // }
+    grid-template-rows: 33% 33% 33%;
+
+    @media (min-width:992px) {    
+            display: grid;
+            align-content: center;
+            grid-template-columns: 33% 33% 33%;
+            height: 120px;
+            align-items: center;
+    }
 }
 
 nav{
-    display: flex;
-    order: 1;
-    align-items: center;
-    font-weight: 500;
+    order: 3;
+
+    @media (min-width:992px) {
+        display: flex;
+        order: 1;
+        align-items: center;
+        font-weight: 500;
+    }
+}
 
     a{
         margin: 0;
@@ -42,9 +53,13 @@ nav{
 }
 
 .logo{
-    display: table;
-    order: 2;
-    margin: auto;
+    order: 1;
+
+    @media (min-width:992px) {
+        display: table;
+        order: 2;
+        margin: auto;
+    }
 }
 
 input{
