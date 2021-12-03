@@ -28,9 +28,10 @@ header{
     @media (min-width:992px) {    
             display: grid;
             align-content: center;
+            grid-template-rows: none;
             grid-template-columns: 33% 33% 33%;
             height: 120px;
-            align-items: center;
+            align-content: center;
     }
 }
 

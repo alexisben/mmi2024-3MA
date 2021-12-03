@@ -285,9 +285,15 @@ figcaption{
 
 .lien_img{
     margin: 0;
+   position: relative;
 }
 
+.col_img{
 
+    :hover{
+        opacity: 0.5;
+    }
+}
 
 
 .liste_horaires{
@@ -579,6 +585,21 @@ figcaption{
 
 .button-align-bis{
     
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-bottom: 100px;
+    padding-top: 80px;
+
+    :hover{
+        background: $noir;
+    }
+}
+
+.button-align-film{
     position: relative;
     height: 100%;
     display: flex;
