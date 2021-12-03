@@ -116,7 +116,7 @@ ul{
 }
 
 .rowafiche{
-    margin: 100px 0;
+    margin-top: 100px;
     @media screen and (max-width:400px){
         margin: 0px 50px;
     }
@@ -211,6 +211,11 @@ figcaption{
     margin-bottom: 100px;
     padding-top: 100px;
     color: $noir;
+    @media screen and (max-width:400px) {
+        margin-bottom: 50px;
+        padding-top: 50px;
+
+    }
 
 }
 
@@ -553,6 +558,7 @@ figcaption{
 
 .d-block{
     padding: 250px;
+    margin-top: -200px;
 }
 
 .carousel-control-prev-icon{
@@ -564,8 +570,17 @@ figcaption{
     padding: 20px;
     margin-right: 450px;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
 .button-align{
+=======
+>>>>>>> 5a1ac07eae40a482c29251e63a1c64d4a7eb84e9
+.button-align-bis{
+>>>>>>> 6b2bdf216dd078632b860e18028b4993353455d0
     position: relative;
     height: 100%;
     display: flex;
@@ -578,4 +593,13 @@ figcaption{
     :hover{
         background: $noir;
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+<<<<<<< HEAD
+=======
+>>>>>>> 683e489452fbf9f7aa9523468554599c0b1f70a8
+>>>>>>> 5a1ac07eae40a482c29251e63a1c64d4a7eb84e9
+>>>>>>> 6b2bdf216dd078632b860e18028b4993353455d0
