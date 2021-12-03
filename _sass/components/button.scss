@@ -31,6 +31,9 @@ button{
         padding-left: 20px;
         display: table;
     }
+    @media screen and (max-width:400px){
+        width: 90%;
+    }
 }
 
 button:hover{

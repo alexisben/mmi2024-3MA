@@ -214,9 +214,9 @@ figcaption{
     padding-top: 100px;
     color: $noir;
     @media screen and (max-width:400px) {
-        margin-bottom: 50px;
+        margin: 50px 0;
         padding-top: 50px;
-
+        
     }
 
 }
@@ -282,6 +282,12 @@ figcaption{
         margin-bottom: 0;
     }
 }
+
+.lien_img{
+    margin: 0;
+}
+
+
 
 
 .liste_horaires{
@@ -498,7 +504,6 @@ figcaption{
 
 .horaires{
     font-family: $titre;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     h2{
@@ -532,8 +537,10 @@ figcaption{
         }
     }
     p{
-        margin: 25px 0;
+        margin-top: 70px;
+        margin-bottom: 50px;
         text-align: center;
+        font-family: $text;
     }
 }
 
@@ -569,20 +576,20 @@ figcaption{
     margin-bottom: -100px;
 }
 
-.carousel-control-prev-icon{
-    padding: 20px;
-    margin-left: 450px;
-}
+// .span carousel-control-prev-icon{
+//     color: black;
+// }
 
-.carousel-control-next-icon{
-    padding: 20px;
-    margin-right: 450px;
-}
+// .span carousel-control-next-icon{
+//     color: black;
+
+// }
 
 
 
 
 .button-align-bis{
+    
     position: relative;
     height: 100%;
     display: flex;
