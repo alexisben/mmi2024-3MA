@@ -537,6 +537,11 @@ figcaption{
     }
 }
 
+.horaires li:hover{
+    background-color: $orange;
+    color: $noir;
+}
+
 .video{
     display:flex;
     align-items: center;
@@ -561,6 +566,7 @@ figcaption{
 .d-block{
     padding: 250px;
     margin-top: -200px;
+    margin-bottom: -100px;
 }
 
 .carousel-control-prev-icon{
@@ -573,7 +579,10 @@ figcaption{
     margin-right: 450px;
 }
 
-.button-align{
+
+
+
+.button-align-bis{
     position: relative;
     height: 100%;
     display: flex;
@@ -586,4 +595,12 @@ figcaption{
     :hover{
         background: $noir;
     }
+<<<<<<< HEAD
 }
+=======
+
+
+}
+
+
+>>>>>>> a9c13af268ca9e57df30ba17fec62d13406281ad
