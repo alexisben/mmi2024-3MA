@@ -32,15 +32,14 @@ title: Bienvenue sur la page du film
     </section>
 
 </section>
-<div class="TitrePhoto">
-    {% include titre.html content="Bande d'annonce" %}
+<div class="titre-align">
+    {% include titre.html content="Horaires" %}
 </div>
 
 
     <!-- Programmation du film -->
 
 <section class="horaires">
-    <h2>Horaires :</h2>
     <ul>
         <li><b>10:30</b><br />VF</li>
         <li><b>12:00</b><br />VF</li>
@@ -56,8 +55,8 @@ title: Bienvenue sur la page du film
 <section class="video">
 
 
-    <div class="TitrePhoto">
-        {% include titre.html content="Photos" %}
+    <div class="titre-align">
+        {% include titre.html content="Bandes annonces" %}
     </div>
     
     <div>
@@ -72,8 +71,8 @@ title: Bienvenue sur la page du film
 
 
 <section class="photo_slider">
-    <div>
-        {% include titre.html content="Photo" %}
+    <div class="titre-align">
+        {% include titre.html content="Photos" %}
     </div>
     
 </section>
@@ -115,7 +114,7 @@ title: Bienvenue sur la page du film
   </div>
 
 <section class="voir_seances">
-    <div>
+    <div class="button-align-bis">
         {%include button.html content="Voir plus de séances"%}
     </div>
 </section>
