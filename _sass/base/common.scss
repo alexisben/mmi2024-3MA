@@ -61,6 +61,9 @@ ul{
 .container_hero{
     height: 100%;
     padding-top: 100px;
+    @media screen and (max-width:400px) {
+        padding-top: 50px;
+    }
     .my_col{
         padding-bottom: 30px;
         .h1_hero{
