@@ -144,7 +144,8 @@ ul{
 }
 
 .FA_7jours{
-    padding-right: 20px;
+    position: absolute;
+    left: 0;
 }
 
 figcaption{
@@ -303,7 +304,7 @@ figcaption{
 }
 
 .col_img{
-
+    position: relative;
     :hover{
         opacity: 0.5;
     }
