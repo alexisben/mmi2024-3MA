@@ -61,22 +61,25 @@ ul{
 .container_hero{
     height: 100%;
     padding-top: 100px;
-    h1{
-        color: $blanc;
-        font-size: 64px;
-        font-weight: 700;
-        b{
+    .my_col{
+        padding-bottom: 30px;
+        h1{
             color: $blanc;
             font-size: 64px;
-        }
-        @media screen and (max-width:400px) {
-            font-size: 24px;
-            padding-top: 30px;
-            padding-bottom: 30px;
+            font-weight: 700;
+            b{
+                color: $blanc;
+                font-size: 64px;
+            }
+            @media screen and (max-width:400px) {
+                font-size: 24px;
+                padding-top: 30px;
+            }
         }
     }
 
 }
+
 
 
 
