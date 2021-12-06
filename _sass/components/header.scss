@@ -56,7 +56,6 @@ nav{
         order: 1;
         align-items: center;
         font-weight: 500;
-        margin: 10px;
     }
 }
 
@@ -64,6 +63,9 @@ nav{
         margin: 0;
         margin-right: 50px;
         border-bottom: $noir;
+        @media screen and (max-width:400px) {
+            margin: 10px;
+        }
     }
 
 .logo{
