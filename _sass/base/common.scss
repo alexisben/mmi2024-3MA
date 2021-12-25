@@ -403,6 +403,14 @@ figcaption{
     width: 100%;
 }
 
+.FA:hover{
+    opacity: 0.5;
+    content: url(../../assets/img/Voir.svg);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 // ---
 
 // page film
