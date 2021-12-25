@@ -7,7 +7,7 @@ body {
 .container_img{
 
     background-image: url("../../assets/img/hero.png");
-    height: 100vh;
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $text;
@@ -54,31 +54,42 @@ ul{
     @media screen and (max-width:400px){
         display: inline-block;
         text-align: center;
+        margin: 0 110px;
     }
 }
 
 
 .container_hero{
     height: 100%;
-    h1{
-        color: $blanc;
-        font-size: 48px;
-        font-weight: 700;
-        b{
-            color: $blanc;
-            font-size: 64px;
-        }
-        @media screen and (max-width:400px) {
-            font-size: 24px;
+    padding-top: 100px;
+    @media screen and (max-width:400px) {
+        padding-top: 50px;
+    }
+    .my_col{
+        padding-bottom: 30px;
+        .h1_hero{
+            h1{
+                color: $blanc;
+                font-size: 64px;
+                font-weight: 700;
+                b{
+                    color: $blanc;
+                    font-size: 64px;
+                }
+                @media screen and (max-width:400px) {
+                    font-size: 24px;
+                    padding-top: 30px;
+                }
+            }
+            @media screen and (max-width:400px) {
+                    padding-top: 0;
+            }
         }
     }
 
 }
 
 
-.h1_hero{
-    padding: 50px 0;
-}
 
 .container_img h2{
     color: $orange; 
@@ -131,6 +142,11 @@ ul{
 
 .FA{
     width: 100%;
+}
+
+.FA_7jours{
+    width:100%;
+    margin: 0 -20px;
 }
 
 figcaption{
@@ -214,8 +230,8 @@ figcaption{
     padding-top: 100px;
     color: $noir;
     @media screen and (max-width:400px) {
-        margin: 50px 0;
-        padding-top: 50px;
+        margin-bottom: 50px;
+        padding: 100px 0;
         
     }
 
@@ -285,9 +301,15 @@ figcaption{
 
 .lien_img{
     margin: 0;
+   position: relative;
 }
 
+.col_img{
 
+    :hover{
+        opacity: 0.5;
+    }
+}
 
 
 .liste_horaires{
@@ -584,28 +606,33 @@ figcaption{
     margin-bottom: -100px;
 }
 
-// .span carousel-control-prev-icon{
-//     color: black;
-// }
-
-// .span carousel-control-next-icon{
-//     color: black;
-
-// }
-
-
-
 
 .button-align-bis{
     
     position: relative;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 0;
     padding-bottom: 100px;
     padding-top: 80px;
+
+    :hover{
+        background: $noir;
+    }
+}
+
+.button-align-film{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    padding-bottom: 100px;
+    padding-top: 80px;
+    
 
     :hover{
         background: $noir;

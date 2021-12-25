@@ -10,8 +10,14 @@ header{
     color: $noir;
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: 400;
-    height:200px;
+    height: 250px;
     z-index: 7;
+    overflow: hidden;
+
+    div.container{
+        display: flex;
+        justify-content: center;
+    }
 
     @media (min-width:992px) {
         height: 120px;
@@ -24,18 +30,26 @@ header{
 .header{
     display: grid;
     grid-template-rows: 33% 33% 33%;
+    width: fit-content;
 
     @media (min-width:992px) {    
             display: grid;
             align-content: center;
+            grid-template-rows: none;
             grid-template-columns: 33% 33% 33%;
             height: 120px;
-            align-items: center;
+            align-content: center;
     }
 }
 
 nav{
-    order: 3;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    padding-top: 30px;
 
     @media (min-width:992px) {
         display: flex;
@@ -45,15 +59,22 @@ nav{
     }
 }
 
-    a{
+    .menu_header{
         margin: 0;
         margin-right: 50px;
         border-bottom: $noir;
+        @media screen and (max-width:400px) {
+            margin: 20px 10px;
+        }
     }
-}
 
 .logo{
     order: 1;
+    display: flex;
+    width: auto;
+    margin-top: 10px;
+    justify-content: center;
+    height: 100px;
 
     @media (min-width:992px) {
         display: table;
@@ -88,17 +109,39 @@ a{
 }
 
 .recherche{
+    width: 400px;
+    height: fit-content;
     display: flex;
-    margin: auto;
     order: 3;
-    margin-right: 300px;
+    justify-content: center;
+    margin-top: 10px;
+    
+    input{
+        display: flex;
+        text-align: center;
+        width: 200px;
+        font-weight: 600;
+    }
 
     img{
+        width: 30px;
+        display: flex;
         margin-right: 10px;
     }
 
-    input{
-        margin-right: 250px;
+    @media (min-width:992px) {
+        display: flex;
+        margin: auto;
+        order: 3;
+        margin-right: 300px;
+
+        img{
+            margin-right: 10px;
+        }
+
+        input{
+            margin-right: 250px;
+        }
     }
 }
 
